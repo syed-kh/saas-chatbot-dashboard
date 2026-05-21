@@ -12,6 +12,9 @@ export const useStore = create(
       activeModel: 'GPT-4o',
       setActiveModel: (model) => set({ activeModel: model }),
       
+      authUser: null,
+      setAuthUser: (user) => set({ authUser: user }),
+      
       userProfile: {
         name: 'Arjun Dev',
         email: 'arjun.dev@example.com',
